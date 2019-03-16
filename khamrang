@@ -84,7 +84,7 @@
 		</tr>
 		<tr>
 			<td></td>
-			<td align="right"><input type="button" id="tinhtienID" value="Thoát" onclick="thoat()"/> <input type="button" id="tinhtienID" value="Tính tiền" onclick="tinhtien()"/></td>
+			<td align="right"><input type="button" id="tinhtienID" value="Exit" onclick="thoat()"/> <input type="button" id="tinhtienID" value="Tính tiền" onclick="tinhtien()"/></td>
 		</tr>
 		</table>
 	</body>

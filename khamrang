@@ -56,7 +56,7 @@
 		</script>
 	</head>
 	<body>
-		<h1 style="text-align:center; color:blue">Dental payment form</h1>
+		<h1 style="text-align:center; color:red">Dental payment form</h1>
 		<table width="30%" align="center">
 			<tr>
 			<td>Tên khách hàng: <input type="text" id="ten"/></td>

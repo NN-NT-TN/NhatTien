@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script>
+		function tinhtien()
+		{
+			var t= document.getElementById("ten");
+			var cv= document.getElementById("caovoiID");
+			var tr= document.getElementById("taytrangID");
+			var ch= document.getElementById("chuphinhID");
+			var ck= document.getElementById("ckbID");
+			var sl= document.getElementById("soluongID");
+			var tt= document.getElementById("tongtienID");
+			if(cv.checked)
+			{
+			cv=100000;
+			
+			}
+			else
+			{
+			cv=0;
+			}
+			if(tr.checked)
+			{
+			tr=1200000;
+			}
+			else
+			{
+			tr=0;
+			}
+			if(ch.checked)
+			{
+			ch=200000;
+			}
+			else
+			{
+			ch=0;
+			}
+	
+			var ttr=Number(sl.value)*80000;
+			var tongtien=cv+tr+ch+ttr;
+			if(Number(sl.value)<0)
+			{
+				alert("Error!!!");
+				window.location.reload(false); 
+			}
+			else
+			tt.value=tongtien;
+			alert("Tên: "+t.value+" Tổng tiền: "+tongtien)
+		}
+		function thoat()
+		{
+			window.location.reload(false); 
+		}
+		</script>
+	</head>
+	<body>
+		<h1 style="text-align:center; color:blue">Dental payment form</h1>
+		<table width="30%" align="center">
+			<tr>
+			<td>Tên khách hàng: <input type="text" id="ten"/></td>
+			<td ></td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" id="caovoiID"/> Cạo vôi</td>
+			<td align="right"> $100.000</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" id="taytrangID"/> Tẩy tắng</td>
+			<td align="right"> $1.200.000</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" id="chuphinhID"/> Chụp hình răng</td>
+			<td align="right"> $200.000</td>
+		</tr>
+		<tr>
+			<td>Trám răng <input type="number" style="width:100px" id="soluongID" placeholder="0"/></td>
+			<td align="right"> $80.000</td>
+		</tr
+		<tr>
+			<td align="right">Tổng tiền:</td>
+			<td align="right"> <input type="text" style="width:150px" id="tongtienID"/></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td align="right"><input type="button" id="tinhtienID" value="Thoát" onclick="thoat()"/> <input type="button" id="tinhtienID" value="Tính tiền" onclick="tinhtien()"/></td>
+		</tr>
+		</table>
+	</body>
+</html>

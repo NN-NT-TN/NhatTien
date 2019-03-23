@@ -5,6 +5,7 @@
 		<script>
 		function tinhtien()
 		{
+			//Them chu thich
 			var t= document.getElementById("ten");
 			var cv= document.getElementById("caovoiID");
 			var tr= document.getElementById("taytrangID");
